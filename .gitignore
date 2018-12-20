@@ -1,4 +1,4 @@
 .idea/
 penv/*
-WeFor/settings.py
-WeFor/wsgi.py
+WeFor/WeFor/settings.py
+WeFor/WeFor/wsgi.py
