@@ -1,0 +1,226 @@
+body,
+html {
+   height: 100%;
+   scroll-behavior: smooth;
+   background-color: #062946;
+   font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+   padding-top: 56px;
+}
+
+.h4-font-properties {
+   font-weight: normal;
+}
+
+.font-weight-light {
+   font-weight: normal;
+}
+
+.font-weight-middle {
+   font-weight: 500;
+}
+
+.margin-top-attribute {
+   margin-top: 1.0rem;
+   margin-bottom: 0.8rem;
+}
+
+.margin-top-header {
+   margin-top: 0.5rem;
+   margin-bottom: 1rem;
+}
+
+.margin-p-navbar {
+   margin-top: 0.5rem;
+   margin-bottom: 0.5rem;
+}
+
+a {
+   color: #ffcd50;
+   text-decoration: none;
+   background-color: transparent;
+   cursor: pointer;
+}
+
+a:hover,
+a:focus {
+   text-decoration: none;
+   color: #ede8e6;
+}
+
+a.link {
+   color: #ede8e6;
+}
+
+a.link:hover,
+a.link:focus {
+   color: #ede8e6;
+}
+
+a:not([href]):not([tabindex]) {
+   color: #ffcd50;
+   text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):hover,
+a:not([href]):not([tabindex]):focus {
+   color: #ede8e6;
+   text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):focus {
+   outline: 0;
+}
+
+@media (max-width: 767px) {
+   .text-xs-center {
+      text-align: center;
+   }
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link,
+#mainNav .navbar-nav>li.nav-item>a.nav-link:focus {
+   color: #ffcd50;
+}
+
+#mainNav .navbar-nav>li.nav-item>a.nav-link:focus:hover,
+#mainNav .navbar-nav>li.nav-item>a.nav-link:hover {
+   color: #ede8e6;
+}
+
+.navbar.navbar-toggle .navbar-toggler-icon {
+   background-image: url('../img/toggler.svg');
+}
+
+button:focus {
+   outline: 5px auto #ffcd50;
+}
+
+.background-primary {
+   background-color: #062946;
+}
+
+.background-navbar {
+   background-color: #072c4b;
+}
+
+.bg-blue-dark {
+   background-color: #004985;
+}
+
+.text-primary-color {
+   color: #ede8e6;
+}
+
+.text-gold {
+   color: #ffcd50;
+}
+
+.box {
+   padding: 10px;
+}
+
+.icon-size {
+   font-size: 3em;
+}
+
+.card {
+   margin-bottom: 20px;
+   border-color: #ffcd50;
+   border-radius: 0;
+}
+
+.card-body {
+   padding: 0.75rem;
+}
+
+.card-title {
+   margin-bottom: 0.5rem;
+}
+
+.form-control:focus {
+   border-color: #ffcd50;
+   box-shadow: 0 0 0 0.1rem rgb(255, 205, 80);
+}
+
+.btn-group-lg>.btn,
+.btn-lg {
+   font-size: 1.20rem;
+}
+
+.btn {
+   border: 2px solid transparent;
+   font-weight: 400;
+}
+
+.btn-group-lg>.btn,
+.btn-lg {
+   padding: .5rem 1rem;
+   font-size: 1.20rem;
+   line-height: 1.5;
+   border-radius: .3rem;
+}
+
+.btn-outline-light {
+   color: #ede8e6;
+   background-color: transparent;
+   background-image: none;
+   border-color: #ffcd50;
+}
+
+.btn-outline-light:hover {
+   color: #062946;
+   background-color: #ffcd50;
+   border-color: #ffcd50;
+}
+
+.btn-outline-light:not(:disabled):not(.disabled).active,
+.btn-outline-light:not(:disabled):not(.disabled):active,
+.show>.btn-outline-light.dropdown-toggle {
+   color: #062946;
+   background-color: #ffcd50;
+   border-color: #ffcd50;
+}
+
+.btn-outline-light.focus,
+.btn-outline-light:focus {
+   box-shadow: 0 0 0 0.2rem rgba(255, 205, 80, .5);
+}
+
+.btn.focus,
+.btn:focus {
+   outline: 0;
+   box-shadow: 0 0 0 0.2rem rgba(255, 205, 80, .5);
+}
+
+.btn-outline-light:not(:disabled):not(.disabled).active:focus,
+.btn-outline-light:not(:disabled):not(.disabled):active:focus,
+.show>.btn-outline-light.dropdown-toggle:focus {
+   box-shadow: 0 0 0 0.2rem rgba(255, 205, 80, .5);
+}
+
+.w-25 {
+   width: 25% !important;
+}
+
+.w-50 {
+   width: 50% !important;
+}
+
+.w-75 {
+   width: 75% !important;
+}
+
+.w-100 {
+   width: 100% !important;
+}
+
+.w-auto {
+   width: auto !important;
+}
+
+.footer {
+   border-top: 1px solid #ede8e6;
+}
