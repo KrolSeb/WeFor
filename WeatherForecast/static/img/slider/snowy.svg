@@ -1,0 +1,215 @@
+<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg" style=""><rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="none" stroke="none"/>
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+/*
+** CLOUDS
+*/
+@keyframes am-weather-cloud-2 {
+  0% {
+    -webkit-transform: translate(0px,0px);
+       -moz-transform: translate(0px,0px);
+        -ms-transform: translate(0px,0px);
+            transform: translate(0px,0px);
+  }
+
+  50% {
+    -webkit-transform: translate(2px,0px);
+       -moz-transform: translate(2px,0px);
+        -ms-transform: translate(2px,0px);
+            transform: translate(2px,0px);
+  }
+
+  100% {
+    -webkit-transform: translate(0px,0px);
+       -moz-transform: translate(0px,0px);
+        -ms-transform: translate(0px,0px);
+            transform: translate(0px,0px);
+  }
+}
+
+.am-weather-cloud-2 {
+  -webkit-animation-name: am-weather-cloud-2;
+     -moz-animation-name: am-weather-cloud-2;
+          animation-name: am-weather-cloud-2;
+  -webkit-animation-duration: 3s;
+     -moz-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+/*
+** SNOW
+*/
+@keyframes am-weather-snow {
+  0% {
+    -webkit-transform: translateX(0) translateY(0);
+       -moz-transform: translateX(0) translateY(0);
+        -ms-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+
+  33.33% {
+    -webkit-transform: translateX(-1.2px) translateY(2px);
+       -moz-transform: translateX(-1.2px) translateY(2px);
+        -ms-transform: translateX(-1.2px) translateY(2px);
+            transform: translateX(-1.2px) translateY(2px);
+  }
+
+  66.66% {
+    -webkit-transform: translateX(1.4px) translateY(4px);
+       -moz-transform: translateX(1.4px) translateY(4px);
+        -ms-transform: translateX(1.4px) translateY(4px);
+            transform: translateX(1.4px) translateY(4px);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateX(-1.6px) translateY(6px);
+       -moz-transform: translateX(-1.6px) translateY(6px);
+        -ms-transform: translateX(-1.6px) translateY(6px);
+            transform: translateX(-1.6px) translateY(6px);
+    opacity: 0;
+  }
+}
+
+@keyframes am-weather-snow-reverse {
+  0% {
+    -webkit-transform: translateX(0) translateY(0);
+       -moz-transform: translateX(0) translateY(0);
+        -ms-transform: translateX(0) translateY(0);
+            transform: translateX(0) translateY(0);
+  }
+
+  33.33% {
+    -webkit-transform: translateX(1.2px) translateY(2px);
+       -moz-transform: translateX(1.2px) translateY(2px);
+        -ms-transform: translateX(1.2px) translateY(2px);
+            transform: translateX(1.2px) translateY(2px);
+  }
+
+  66.66% {
+    -webkit-transform: translateX(-1.4px) translateY(4px);
+       -moz-transform: translateX(-1.4px) translateY(4px);
+        -ms-transform: translateX(-1.4px) translateY(4px);
+            transform: translateX(-1.4px) translateY(4px);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateX(1.6px) translateY(6px);
+       -moz-transform: translateX(1.6px) translateY(6px);
+        -ms-transform: translateX(1.6px) translateY(6px);
+            transform: translateX(1.6px) translateY(6px);
+    opacity: 0;
+  }
+}
+
+.am-weather-snow-1 {
+  -webkit-animation-name: am-weather-snow;
+     -moz-animation-name: am-weather-snow;
+      -ms-animation-name: am-weather-snow;
+          animation-name: am-weather-snow;
+  -webkit-animation-duration: 2s;
+     -moz-animation-duration: 2s;
+      -ms-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.am-weather-snow-2 {
+  -webkit-animation-name: am-weather-snow;
+     -moz-animation-name: am-weather-snow;
+      -ms-animation-name: am-weather-snow;
+          animation-name: am-weather-snow;
+  -webkit-animation-delay: 1.2s;
+     -moz-animation-delay: 1.2s;
+      -ms-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  -webkit-animation-duration: 2s;
+     -moz-animation-duration: 2s;
+      -ms-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.am-weather-snow-3 {
+  -webkit-animation-name: am-weather-snow-reverse;
+     -moz-animation-name: am-weather-snow-reverse;
+      -ms-animation-name: am-weather-snow-reverse;
+          animation-name: am-weather-snow-reverse;
+  -webkit-animation-duration: 2s;
+     -moz-animation-duration: 2s;
+      -ms-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+        ]]>
+  </style>
+ </defs>
+ <g style="">
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="130" width="130" y="-1" x="-1"/>
+ </g>
+ <g style="" class="currentLayer">
+  <title>Layer 1</title>
+  <g id="snowy-6" class="">
+   <g id="svg_1">
+    <g id="svg_2" class="am-weather-cloud-2">
+     <path id="svg_3" stroke-width="1.2" stroke-linejoin="round" stroke="white" fill="#57A0EE" d="m116.77925109863281,63.24687194824219 c0,-15.25694465637207 -12.271890640258789,-27.197162628173828 -27.197162628173828,-27.197162628173828 c-3.31672739982605,0 -6.30178165435791,0.663345456123352 -9.286836624145508,1.658363699913025 c-0.9950182437896729,-11.276873588562012 -10.281853675842285,-20.56370735168457 -21.890399932861328,-20.56370735168457 c-12.271890640258789,0 -22.22207260131836,9.950181007385254 -22.22207260131836,22.22207260131836 c0,2.653381824493408 0.663345456123352,5.306763648986816 1.326690912246704,7.628472328186035 c-0.9950182437896729,-0.331672728061676 -2.321709156036377,-0.331672728061676 -3.31672739982605,-0.331672728061676 c-12.271890640258789,0 -22.22207260131836,9.950181007385254 -22.22207260131836,22.22207260131836 c0,11.940217971801758 9.618509292602539,21.890399932861328 21.558727264404297,22.22207260131836 l57.04771041870117,0 c14.593600273132324,-1.658363699913025 26.202146530151367,-13.2669095993042 26.202146530151367,-27.86050796508789 z"/>
+    </g>
+    <g id="svg_4" class="am-weather-snow-1">
+     <g id="svg_5">
+      <line id="svg_6" y2="113.3294588007578" y1="96.74582202915137" x2="34.85608195371936" x1="34.85608195371936" stroke-width="1.2" stroke-linecap="round" stroke="#57A0EE" fill="none"/>
+      <line id="svg_7" y2="110.90084386243711" y1="99.17444165181396" x2="28.99287445827293" x1="40.719276668896086" stroke-linecap="round" stroke="#57A0EE" fill="none" points="null" d="null"/>
+      <line id="svg_8" y2="105.03764236156859" y1="105.03764236156859" x2="26.564261815608745" x1="43.14789858721518" stroke-linecap="round" stroke="#57A0EE" fill="none" points="null" d="null"/>
+      <line id="svg_9" y2="99.17443035529055" y1="110.9008325659137" x2="28.992858710603066" x1="40.71926092122622" stroke-linecap="round" stroke="#57A0EE" fill="none" points="null" d="null"/>
+     </g>
+    </g>
+    <g id="svg_10" class="am-weather-snow-2">
+     <g id="svg_11">
+      <line id="svg_12" y2="113.3294588007578" y1="96.74582202915137" x2="61.389900788289665" x1="61.389900788289665" stroke-width="1.2" stroke-linecap="round" stroke="#57A0EE" fill="none"/>
+      <line id="svg_13" y2="110.90084273472921" y1="99.17444052410606" x2="55.52669442055112" x1="67.25309663117427" stroke-linecap="round" stroke="#57A0EE" fill="none" points="null" d="null"/>
+      <line id="svg_14" y2="105.0376401061528" y1="105.0376401061528" x2="53.098091927258025" x1="69.68172869886448" stroke-linecap="round" stroke="#57A0EE" fill="none" points="null" d="null"/>
+      <line id="svg_15" y2="99.17444727090903" y1="110.90084948153218" x2="55.52668994996025" x1="67.2530921605834" stroke-linecap="round" stroke="#57A0EE" fill="none" points="null" d="null"/>
+     </g>
+    </g>
+    <g id="svg_16" class="am-weather-snow-3">
+     <g id="svg_17">
+      <line id="svg_18" y2="113.3294588007578" y1="96.74582202915137" x2="91.24043432487048" x1="91.24043432487048" stroke-width="1.2" stroke-linecap="round" stroke="#57A0EE" fill="none"/>
+      <line id="svg_19" y2="110.90082349785976" y1="99.1744212872366" x2="85.37723857011869" x1="97.10364078074184" stroke-linecap="round" stroke="#57A0EE" fill="none" points="null" d="null"/>
+      <line id="svg_20" y2="105.03764183211773" y1="105.03764183211773" x2="82.94861020537914" x1="99.53224697698558" stroke-linecap="round" stroke="#57A0EE" fill="none" points="null" d="null"/>
+      <line id="svg_21" y2="99.17443705570275" y1="110.9008392663259" x2="85.37720942162446" x1="97.1036116322476" stroke-linecap="round" stroke="#57A0EE" fill="none" points="null" d="null"/>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>

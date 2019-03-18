@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="128"
+   height="128"
+   version="1.1"
+   id="svg23"
+   sodipodi:docname="thunder.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata27">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     id="namedview25"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="1.84375"
+     inkscape:cx="-112.54237"
+     inkscape:cy="64"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg_1">
+    <sodipodi:guide
+       position="64,64"
+       orientation="0,1"
+       id="guide29"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+    <sodipodi:guide
+       position="64,64"
+       orientation="1,0"
+       id="guide31"
+       inkscape:locked="false"
+       inkscape:label=""
+       inkscape:color="rgb(0,0,255)" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4">
+    <style
+       type="text/css"
+       id="style2"><![CDATA[
+/*
+** CLOUDS
+*/
+@keyframes am-weather-cloud-1 {
+  0% {
+    -webkit-transform: translate(-5px,0px);
+       -moz-transform: translate(-5px,0px);
+        -ms-transform: translate(-5px,0px);
+            transform: translate(-5px,0px);
+  }
+
+  50% {
+    -webkit-transform: translate(10px,0px);
+       -moz-transform: translate(10px,0px);
+        -ms-transform: translate(10px,0px);
+            transform: translate(10px,0px);
+  }
+
+  100% {
+    -webkit-transform: translate(-5px,0px);
+       -moz-transform: translate(-5px,0px);
+        -ms-transform: translate(-5px,0px);
+            transform: translate(-5px,0px);
+  }
+}
+
+.am-weather-cloud-1 {
+  -webkit-animation-name: am-weather-cloud-1;
+     -moz-animation-name: am-weather-cloud-1;
+          animation-name: am-weather-cloud-1;
+  -webkit-animation-duration: 7s;
+     -moz-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@keyframes am-weather-cloud-2 {
+  0% {
+    -webkit-transform: translate(0px,0px);
+       -moz-transform: translate(0px,0px);
+        -ms-transform: translate(0px,0px);
+            transform: translate(0px,0px);
+  }
+
+  50% {
+    -webkit-transform: translate(2px,0px);
+       -moz-transform: translate(2px,0px);
+        -ms-transform: translate(2px,0px);
+            transform: translate(2px,0px);
+  }
+
+  100% {
+    -webkit-transform: translate(0px,0px);
+       -moz-transform: translate(0px,0px);
+        -ms-transform: translate(0px,0px);
+            transform: translate(0px,0px);
+  }
+}
+
+.am-weather-cloud-2 {
+  -webkit-animation-name: am-weather-cloud-2;
+     -moz-animation-name: am-weather-cloud-2;
+          animation-name: am-weather-cloud-2;
+  -webkit-animation-duration: 3s;
+     -moz-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+/*
+** STROKE
+*/
+@keyframes am-weather-stroke {
+  0% {
+    -webkit-transform: translate(0.0px,0.0px);
+       -moz-transform: translate(0.0px,0.0px);
+        -ms-transform: translate(0.0px,0.0px);
+            transform: translate(0.0px,0.0px);
+  }
+
+  2% {
+    -webkit-transform: translate(0.3px,0.0px);
+       -moz-transform: translate(0.3px,0.0px);
+        -ms-transform: translate(0.3px,0.0px);
+            transform: translate(0.3px,0.0px);
+  }
+
+  4% {
+    -webkit-transform: translate(0.0px,0.0px);
+       -moz-transform: translate(0.0px,0.0px);
+        -ms-transform: translate(0.0px,0.0px);
+            transform: translate(0.0px,0.0px);
+  }
+
+  6% {
+    -webkit-transform: translate(0.5px,0.4px);
+       -moz-transform: translate(0.5px,0.4px);
+        -ms-transform: translate(0.5px,0.4px);
+            transform: translate(0.5px,0.4px);
+  }
+
+  8% {
+    -webkit-transform: translate(0.0px,0.0px);
+       -moz-transform: translate(0.0px,0.0px);
+        -ms-transform: translate(0.0px,0.0px);
+            transform: translate(0.0px,0.0px);
+  }
+
+  10% {
+    -webkit-transform: translate(0.3px,0.0px);
+       -moz-transform: translate(0.3px,0.0px);
+        -ms-transform: translate(0.3px,0.0px);
+            transform: translate(0.3px,0.0px);
+  }
+
+  12% {
+    -webkit-transform: translate(0.0px,0.0px);
+       -moz-transform: translate(0.0px,0.0px);
+        -ms-transform: translate(0.0px,0.0px);
+            transform: translate(0.0px,0.0px);
+  }
+
+  14% {
+    -webkit-transform: translate(0.3px,0.0px);
+       -moz-transform: translate(0.3px,0.0px);
+        -ms-transform: translate(0.3px,0.0px);
+            transform: translate(0.3px,0.0px);
+  }
+
+  16% {
+    -webkit-transform: translate(0.0px,0.0px);
+       -moz-transform: translate(0.0px,0.0px);
+        -ms-transform: translate(0.0px,0.0px);
+            transform: translate(0.0px,0.0px);
+  }
+
+  18% {
+    -webkit-transform: translate(0.3px,0.0px);
+       -moz-transform: translate(0.3px,0.0px);
+        -ms-transform: translate(0.3px,0.0px);
+            transform: translate(0.3px,0.0px);
+  }
+
+  20% {
+    -webkit-transform: translate(0.0px,0.0px);
+       -moz-transform: translate(0.0px,0.0px);
+        -ms-transform: translate(0.0px,0.0px);
+            transform: translate(0.0px,0.0px);
+  }
+
+  22% {
+    -webkit-transform: translate(1px,0.0px);
+       -moz-transform: translate(1px,0.0px);
+        -ms-transform: translate(1px,0.0px);
+            transform: translate(1px,0.0px);
+  }
+
+  24% {
+    -webkit-transform: translate(0.0px,0.0px);
+       -moz-transform: translate(0.0px,0.0px);
+        -ms-transform: translate(0.0px,0.0px);
+            transform: translate(0.0px,0.0px);
+  }
+
+  26% {
+    -webkit-transform: translate(-1px,0.0px);
+       -moz-transform: translate(-1px,0.0px);
+        -ms-transform: translate(-1px,0.0px);
+            transform: translate(-1px,0.0px);
+
+  }
+
+  28% {
+    -webkit-transform: translate(0.0px,0.0px);
+       -moz-transform: translate(0.0px,0.0px);
+        -ms-transform: translate(0.0px,0.0px);
+            transform: translate(0.0px,0.0px);
+  }
+
+  40% {
+    fill: orange;
+    -webkit-transform: translate(0.0px,0.0px);
+       -moz-transform: translate(0.0px,0.0px);
+        -ms-transform: translate(0.0px,0.0px);
+            transform: translate(0.0px,0.0px);
+  }
+
+  65% {
+    fill: white;
+    -webkit-transform: translate(-1px,5.0px);
+       -moz-transform: translate(-1px,5.0px);
+        -ms-transform: translate(-1px,5.0px);
+            transform: translate(-1px,5.0px);
+  }
+  61% {
+    fill: orange;
+  }
+
+  100% {
+    -webkit-transform: translate(0.0px,0.0px);
+       -moz-transform: translate(0.0px,0.0px);
+        -ms-transform: translate(0.0px,0.0px);
+            transform: translate(0.0px,0.0px);
+  }
+}
+
+.am-weather-stroke {
+  -webkit-animation-name: am-weather-stroke;
+     -moz-animation-name: am-weather-stroke;
+          animation-name: am-weather-stroke;
+  -webkit-animation-duration: 1.11s;
+     -moz-animation-duration: 1.11s;
+          animation-duration: 1.11s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+        ]]></style>
+  </defs>
+  <g
+     id="g9"
+     transform="matrix(0.90779134,0,0,0.90779134,7.5010117,-4.0986443)">
+    <title
+       id="title6">background</title>
+    <rect
+       id="canvas_background"
+       height="130"
+       width="130"
+       y="-1"
+       x="-1"
+       style="fill:none" />
+  </g>
+  <g
+     id="g21"
+     transform="matrix(2.893665,0,0,2.893665,-119.66315,-126.40282)">
+    <title
+       id="title11">Layer 1</title>
+    <g
+       id="thunder">
+      <g
+         id="svg_1">
+        <g
+           id="svg_2"
+           class="am-weather-cloud-1">
+          <path
+             id="svg_3"
+             transform="matrix(0.6,0,0,0.6,-10,-6)"
+             d="m 134.53268,98.384628 c 0,-4.599998 -3.70001,-8.199997 -8.20001,-8.199997 -1,0 -1.89999,0.199997 -2.79999,0.5 -0.3,-3.400002 -3.1,-6.200005 -6.6,-6.200005 -3.7,0 -6.7,3 -6.7,6.700005 0,0.799995 0.2,1.599998 0.4,2.299995 -0.3,-0.1 -0.7,-0.1 -1,-0.1 -3.7,0 -6.7,3 -6.7,6.700004 0,3.6 2.9,6.6 6.5,6.7 h 17.2 c 4.4,-0.5 7.9,-4 7.9,-8.400004 z"
+             inkscape:connector-curvature="0"
+             style="fill:#91c0f8;stroke:#ffffff;stroke-width:1.20000005;stroke-linejoin:round" />
+        </g>
+        <g
+           id="svg_4">
+          <path
+             id="svg_5"
+             d="m 79.799606,62.190781 c 0,-4.600002 -3.699997,-8.200001 -8.199997,-8.200001 -1,0 -1.900002,0.200001 -2.800003,0.5 -0.299995,-3.400002 -3.099998,-6.200001 -6.599998,-6.200001 -3.699997,0 -6.699997,3 -6.699997,6.700001 0,0.799999 0.199997,1.599998 0.399998,2.299999 -0.299999,-0.1 -0.700001,-0.1 -1,-0.1 -3.700001,0 -6.700001,3 -6.700001,6.699997 0,3.600006 2.900002,6.600006 6.5,6.699997 h 17.200005 c 4.399994,-0.5 7.899994,-4 7.899994,-8.399994 z"
+             inkscape:connector-curvature="0"
+             style="fill:#57a0ee;stroke:#ffffff;stroke-width:1.20000005;stroke-linejoin:round" />
+        </g>
+        <g
+           id="svg_6"
+           transform="matrix(1.0314229,0,0,1.0314229,1.7748325,32.82001)">
+          <polygon
+             id="svg_7"
+             points="57.716339,28.592314 63.916336,28.592314 59.816338,35.792315 63.716339,35.792315 54.91634,46.092316 58.316338,38.392315 54.516342,38.392315 "
+             class="am-weather-stroke"
+             style="fill:#ffa500;stroke:#ffffff" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

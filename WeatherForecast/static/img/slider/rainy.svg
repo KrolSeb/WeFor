@@ -1,0 +1,81 @@
+<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+/*
+** RAIN
+*/
+@keyframes am-weather-rain {
+  0% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: -100;
+  }
+}
+
+.am-weather-rain-1 {
+  -webkit-animation-name: am-weather-rain;
+     -moz-animation-name: am-weather-rain;
+      -ms-animation-name: am-weather-rain;
+          animation-name: am-weather-rain;
+  -webkit-animation-duration: 8s;
+     -moz-animation-duration: 8s;
+      -ms-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.am-weather-rain-2 {
+  -webkit-animation-name: am-weather-rain;
+     -moz-animation-name: am-weather-rain;
+      -ms-animation-name: am-weather-rain;
+          animation-name: am-weather-rain;
+  -webkit-animation-delay: 0.25s;
+     -moz-animation-delay: 0.25s;
+      -ms-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+  -webkit-animation-duration: 8s;
+     -moz-animation-duration: 8s;
+      -ms-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-animation-timing-function: linear;
+     -moz-animation-timing-function: linear;
+      -ms-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+     -moz-animation-iteration-count: infinite;
+      -ms-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+        ]]>
+  </style>
+ </defs>
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="130" width="130" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g stroke="null" id="rainy-6">
+   <g stroke="null" id="svg_1">
+    <g stroke="null" id="svg_2">
+     <path stroke="white" id="svg_3" stroke-width="1.2" stroke-linejoin="round" fill="#57A0EE" d="m110.928005,57.221602c0,-13.662584 -10.98947,-24.355041 -24.355041,-24.355041c-2.970127,0 -5.643241,0.594025 -8.316355,1.485063c-0.891038,-10.098431 -9.207393,-18.414787 -19.602838,-18.414787c-10.98947,0 -19.89985,8.910381 -19.89985,19.89985c0,2.376102 0.594025,4.752203 1.188051,6.831292c-0.891038,-0.297013 -2.079089,-0.297013 -2.970127,-0.297013c-10.98947,0 -19.89985,8.910381 -19.89985,19.89985c0,10.692457 8.613368,19.602838 19.305825,19.89985l51.086183,0c13.068558,-1.485063 23.464003,-11.880508 23.464003,-24.949066z"/>
+    </g>
+   </g>
+   <g stroke="null" id="svg_4" transform="matrix(2.9250040033139304,0.5157571244645182,-0.5157571244645182,2.9250040033139304,-130.01767668606576,-104.44752355683556) ">
+    <line stroke="#91C0F8" id="svg_5" y2="62.841612" y1="54.841612" x2="70.910584" x1="70.910584" stroke-width="2" stroke-linecap="round" stroke-dasharray="4,4" fill="none" class="am-weather-rain-1"/>
+    <line stroke="#91C0F8" id="svg_6" y2="60.841612" y1="52.841612" x2="74.910584" x1="74.910584" stroke-width="2" stroke-linecap="round" stroke-dasharray="4,4" fill="none" class="am-weather-rain-2"/>
+    <line stroke="#91C0F8" id="svg_7" y2="61.841612" y1="53.841612" x2="78.910584" x1="78.910584" stroke-width="2" stroke-linecap="round" stroke-dasharray="4,4" fill="none" class="am-weather-rain-1"/>
+   </g>
+  </g>
+ </g>
+</svg>
