@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'WeatherForecast.apps.WeatherforecastConfig',
+    'WeatherForecast',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +55,7 @@ ROOT_URLCONF = 'WeFor.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        'DIRS': []
         ,
         'APP_DIRS': True,
         'OPTIONS': {
@@ -119,4 +119,5 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
+BASE_DIR_APP = BASE_DIR + '/WeatherForecast/' + 'static/'
 STATIC_URL = '/static/'
