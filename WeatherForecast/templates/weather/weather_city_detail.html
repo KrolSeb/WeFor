@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>WeFor - Pogoda {{ city_weather.city }}</title>
+        <link href="{% static 'img/favicon/favicon.ico' %}" rel="shortcut icon" type="image/png">
+        <link href="{% static 'css/bootstrap/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'css/font-awesome/font-awesome.min.css' %}" rel="stylesheet">
+        <link href="{% static 'css/owfont-icons/owfont-regular.min.css' %}" rel="stylesheet">
+        <link href="{% static 'css/weather-icons/weather-icons.min.css' %}" rel="stylesheet">
+        <link href="{% static 'css/weather_city_detail.min.css' %}" rel="stylesheet">
+        <link href="{% static 'css/animations/animations.min.css' %}" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                <h3 class="font-weight-normal margin-top-attribute text-center text-gold">Aktualne, szczegółowe warunki pogodowe dla miasta</h3>
+            </div>
+        </div>
+
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12 d-flex mx-auto">
+                    <div class="card card-hover text-center bg-blue-dark w-100">
+                        <div class="card-body">
+                            <h3 class="margin-top-header text-gold">{{ city_weather.city }}</h3>
+                            <h5 class="margin-top-header text-primary-color">{{ city_weather.latitude }}° {{ city_weather.longitude }}°</h5>
+
+                            <div class="card-block">
+                                <div class="row pt-2">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <span class="owf owf-5x owf-lg owf-{{ city_weather.code }} text-primary-color"></span>
+                                        <h5 class="text-gold">{{ city_weather.description }}</h5>
+                                    </div>
+                                </div>
+
+                                <div class="row pt-3">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <h5 class="font-weight-normal text-center text-primary-color">Temperatura</h5>
+                                    </div>
+                                </div>
+
+                                <div class="row pt-2">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                        <h5 class="font-weight-normal text-center text-primary-color">Zmierzona</h5>
+                                        <h5 class="text-center text-gold">{{ city_weather.temperature }}°C</h5>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                        <h5 class="font-weight-normal text-center text-primary-color">Odczuwalna</h5>
+                                        <h5 class="text-center text-gold">{{ city_weather.temperature_perceptible }}°C</h5>
+                                    </div>
+                                </div>
+
+                                <div class="row pt-2">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <h5 class="font-weight-normal text-center text-primary-color">Podstawowe dane</h5>
+                                    </div>
+                                </div>
+
+                                <div class="row pt-2">
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                        <h5 class="font-weight-normal text-center text-primary-color">Strefa czasowa</h5>
+                                        <h5 class="text-center text-gold">{{ city_weather.timezone }}</h5>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-6">
+                                        <h5 class="font-weight-normal text-center text-primary-color">Godzina pomiaru</h5>
+                                        <h5 class="text-center text-gold">{{ city_weather.observation_time }}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6 mx-auto">
+                    <div class="card card-hover">
+                        <div class="box bg-blue-dark text-center">
+                            <div class="card-body">
+                                <a class="wi wi-sunrise icon-size text-gold" data-toggle="tooltip" data-placement="top" title="Wschód Słońca"></a>
+                                <h5 class="margin-top-attribute text-primary-color">{{ city_weather.sunrise }}</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-hover">
+                        <div class="box bg-blue-dark text-center">
+                            <div class="card-body">
+                                <a class="wi wi-barometer icon-size text-gold" data-toggle="tooltip" data-placement="top" title="Ciśnienie n.p.m (hPa)"></a>
+                                <h5 class="margin-top-attribute text-primary-color">{{ city_weather.pressure_above_sea_level }}</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-hover">
+                        <div class="box bg-blue-dark text-center">
+                            <div class="card-body">
+                                <a class="wi wi-raindrops icon-size text-gold" data-toggle="tooltip" data-placement="top" title="Ekwiwalent opadów (mm/h)"></a>
+                                <h5 class="margin-top-attribute text-primary-color">{{ city_weather.rain_equivalent }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6 mx-auto">
+                    <div class="card card-hover">
+                        <div class="box bg-blue-dark text-center">
+                            <div class="card-body">
+                                <a class="wi wi-sunset icon-size text-gold" data-toggle="tooltip" data-placement="top" title="Zachód Słońca"></a>
+                                <h5 class="margin-top-attribute text-primary-color">{{ city_weather.sunset }}</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-hover">
+                        <div class="box bg-blue-dark text-center">
+                            <div class="card-body">
+                                <a class="wi wi-humidity icon-size text-gold" data-toggle="tooltip" data-placement="top" title="Wilgotność (%)"></a>
+                                <h5 class="margin-top-attribute text-primary-color">{{ city_weather.humidity }}</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-hover">
+                        <div class="box bg-blue-dark text-center">
+                            <div class="card-body">
+                                <a class="wi wi-day-sunny icon-size text-gold" data-toggle="tooltip" data-placement="top" title="Widoczność (km)"></a>
+                                <h5 class="margin-top-attribute text-primary-color">{{ city_weather.visibility }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6 mx-auto">
+                    <div class="card card-hover">
+                        <div class="box bg-blue-dark text-center">
+                            <div class="card-body">
+                                <a class="wi wi-cloudy icon-size text-gold" data-toggle="tooltip" data-placement="top" title="Zachmurzenie (%)"></a>
+                                <h5 class="margin-top-attribute text-primary-color">{{ city_weather.cloudy_level }}</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-hover">
+                        <div class="box bg-blue-dark text-center">
+                            <div class="card-body">
+                                <a class="wi wi-wind-direction icon-size text-gold" data-toggle="tooltip" data-placement="top" title="Kierunek wiatru"></a>
+                                <h5 class="margin-top-attribute text-primary-color">{{ city_weather.wind_direction }}</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card card-hover">
+                        <div class="box bg-blue-dark text-center">
+                            <div class="card-body">
+                                <a class="wi wi-windy icon-size text-gold" data-toggle="tooltip" data-placement="top" title="Prędkość wiatru (m/s)"></a>
+                                <h5 class="margin-top-attribute text-primary-color">{{ city_weather.wind_speed }}</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="{% static 'js/jquery/jquery.min.js' %}"></script>
+        <script src="{% static 'js/popper/popper.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap/bootstrap.bundle.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/smooth-scrolling/smoothscroll.min.js' %}"></script>
+        <script src="{% static 'js/animations_city_detail.js' %}"></script>
+
+    </body>
+</html>
