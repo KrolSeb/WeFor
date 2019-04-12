@@ -16,7 +16,6 @@ utc_timezone = pytz.timezone('utc')
 translator = Translator()
 
 current_weather_request_url = 'https://api.weatherbit.io/v2.0/current?city={}&lang=pl&key=65887c016c6c46de8d4b61b81d59a960'
-two_days_weather_request_url = 'https://api.weatherbit.io/v2.0/forecast/3hourly?city={}&lang=pl&days=2&key=65887c016c6c46de8d4b61b81d59a960'
 sixteen_days_weather_request_url = 'https://api.weatherbit.io/v2.0/forecast/daily?city={}&lang=pl&key=65887c016c6c46de8d4b61b81d59a960'
 
 nnw_n_direction_limit = 348.75
@@ -110,7 +109,6 @@ def render_extended_mode_view(request):
     if city_name != '':
         city_object = find_city_object(city_name)
         actual_weather_data_for_city = get_current_weather_data(city_object)
-        two_days_forecast_data_for_city = get_two_days_forecast_data(city_object)
         sixteen_days_forecast_data_for_city = get_sixteen_days_forecast_data(city_object)
 
     path_to_view = 'weather/weather_cities_extended.html'
@@ -156,50 +154,6 @@ def convert_dates_to_readable_format(sixteen_days_forecast_data):
     for one_day_data in sixteen_days_forecast_data:
         one_day_data['date'] = convert_date_to_readable_format(one_day_data.get('date'))
 
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"""
-Functions used to get two days weather forecast data
-"""
-""" Main function used to return list of dictionaries with two days forecast data
-:param city_object: contains city name and country code values 
-:returns: list of dictionaries with property values
-"""
-def get_two_days_forecast_data(city_object):
-    two_days_forecast_data = get_two_days_weather_data_for_city(city_object.name, city_object.country_code)
-    corrected_two_days_forecast_data = check_if_two_days_forecast_data_is_correct(two_days_forecast_data)
-    set_readable_two_days_forecast_data(corrected_two_days_forecast_data)
-    return corrected_two_days_forecast_data
-
-""" Gets data about two days forecast for city from API and store it in list of dictionaries
-:param city_name: name of city
-:param country_code: code of country where city exists
-:returns: list of dictionaries
-"""
-def get_two_days_weather_data_for_city(city_name, country_code):
-    full_city_data = city_name + request_values_separator + country_code
-    json_response = requests.get(two_days_weather_request_url.format(full_city_data)).json()
-
-    two_days_weather_data_for_city = []
-    for position in json_response['data']:
-        three_hour_forecast_data = {
-            'code': position['weather']['code'],
-            'description': position['weather']['description'],
-            'datetime': position['datetime'],
-            'wind_gust_speed': position['wind_gust_spd'],
-            'wind_direction': position['wind_dir'],
-            'temperature': position['temp'],
-            'chance_of_rain': position['pop'],
-            'cloudy_level': position['clouds'],
-            'pressure_above_sea_level': position['slp']
-        }
-        date_and_time_values = get_time_and_date_from_datetime(three_hour_forecast_data.get('datetime'))
-        three_hour_forecast_data['time'] = date_and_time_values[0]
-        three_hour_forecast_data['date'] = date_and_time_values[1]
-        two_days_weather_data_for_city.append(three_hour_forecast_data)
-
-    return two_days_weather_data_for_city
-
 """ Splits datetime field to time and date
 :param date_time: datetime value
 :returns: list with data from API
@@ -209,17 +163,6 @@ def get_time_and_date_from_datetime(date_time):
     time = date_time.split(':')[1] + ':00'
     return [time,date]
 
-""" Check values in list of dictionaries data (may be of type None) and corrects it if needed.
-:param two_days_forecast_data: list of dictionaries with weather forecast data
-:returns: list of dictionaries with property values
-"""
-def check_if_two_days_forecast_data_is_correct(two_days_forecast_data):
-    for single_hour_data in two_days_forecast_data:
-        for key in single_hour_data:
-            if single_hour_data[str(key)] is None:
-                single_hour_data[str(key)] = no_data_constant
-
-    return two_days_forecast_data
 
 """ Converts date to format "day.month"
 :param input_date: string value of date
@@ -227,16 +170,6 @@ def check_if_two_days_forecast_data_is_correct(two_days_forecast_data):
 """
 def convert_date_to_readable_format(input_date):
     return str(datetime.strptime(input_date, '%Y-%m-%d').strftime('%d.%m'))
-
-""" Set changed values for dictionary in list of dictionaries (e.g after rounded or convert)
-:param two_days_forecast_data: list of dictionaries with weather forecast data
-"""
-def set_readable_two_days_forecast_data(two_days_forecast_data):
-    for single_hour_data in two_days_forecast_data:
-        single_hour_data['date'] = convert_date_to_readable_format(single_hour_data.get('date'))
-        single_hour_data['pressure_above_sea_level'] = round_int_value(single_hour_data.get('pressure_above_sea_level'))
-        single_hour_data['wind_gust_speed'] = round_int_value(single_hour_data.get('wind_gust_speed'))
-        single_hour_data['wind_direction'] = convert_wind_degrees_to_direction_code(single_hour_data.get('wind_direction'))
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
