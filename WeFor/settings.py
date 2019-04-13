@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/2.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.1/ref/settings/
 """
-
+import django_heroku
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -76,9 +76,13 @@ WSGI_APPLICATION = 'WeFor.wsgi.application'
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+	'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'db0eat44bbip80',
+        'USER': 'qyutbncnatyusl',
+        'PASSWORD': '568c8babe8d50d558b008ebc260b02c20ac43544b4663b0ea58a593300d1d2dd',
+        'HOST': 'ec2-50-17-227-28.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
@@ -121,3 +125,6 @@ USE_TZ = True
 
 BASE_DIR_APP = BASE_DIR + '/WeatherForecast/' + 'static/'
 STATIC_URL = '/static/'
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())
