@@ -78,11 +78,11 @@ WSGI_APPLICATION = 'WeFor.wsgi.application'
 DATABASES = {
 	'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'db0eat44bbip80',
-        'USER': 'qyutbncnatyusl',
-        'PASSWORD': '568c8babe8d50d558b008ebc260b02c20ac43544b4663b0ea58a593300d1d2dd',
-        'HOST': 'ec2-50-17-227-28.compute-1.amazonaws.com',
-        'PORT': '5432',
+        'NAME': 'postgres_db',
+        'USER': 'Sebastian',
+        'PASSWORD': 'ansekran',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 

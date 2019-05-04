@@ -102,7 +102,6 @@ def render_extended_mode_view(request):
     form = CityForm(request.POST or None)
 
     actual_weather_data_for_city = {}
-    two_days_forecast_data_for_city = []
     sixteen_days_forecast_data_for_city = []
 
     city_name = check_if_post_method(request,form)
@@ -112,7 +111,7 @@ def render_extended_mode_view(request):
         sixteen_days_forecast_data_for_city = get_sixteen_days_forecast_data(city_object)
 
     path_to_view = 'weather/weather_cities_extended.html'
-    context = {'actual_weather_for_city': actual_weather_data_for_city,'two_days_forecast_for_city':two_days_forecast_data_for_city,'sixteen_days_forecast_for_city':sixteen_days_forecast_data_for_city,'form': form}
+    context = {'actual_weather_for_city': actual_weather_data_for_city,'sixteen_days_forecast_for_city':sixteen_days_forecast_data_for_city,'form': form}
     return render(request,path_to_view,context)
 
 
@@ -309,8 +308,6 @@ def check_if_current_weather_data_is_correct(weather_data_for_city):
     for key in weather_data_for_city:
         if weather_data_for_city[str(key)] is None:
             weather_data_for_city[str(key)] = no_data_constant
-    return weather_data_for_city
-
 
 """ Round value (e.g. wind speed) up to two decimal places.
 :param value: string value from dictionary
