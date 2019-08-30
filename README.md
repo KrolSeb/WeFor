@@ -60,4 +60,4 @@ This application is inspired by YouTube video: [Creating a Weather App in Django
 
 ## Contact
 
-Created by [@KrolSeb](https://krolseb.github.io/blog/) - please feel free to contact me if you need any further information.
+Created by [@KrolSeb](https://krolseb.github.io/) - please feel free to contact me if you need any further information.
