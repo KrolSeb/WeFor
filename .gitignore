@@ -2,3 +2,4 @@
 penv/*
 WeFor/WeFor/settings.py
 WeFor/WeFor/wsgi.py
+/venv/
