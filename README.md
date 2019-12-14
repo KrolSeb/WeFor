@@ -27,7 +27,7 @@ I wanted to learn the basics of programming web applications, so I used the Djan
 
 ## Technologies
 
-- Django 2.2
+- Django 3.0
 - Python 3.8
 - PostgreSQL 11
 - The full list of dependencies are listed in [requirements.txt](https://github.com/KrolSeb/WeFor/blob/master/requirements.txt)
