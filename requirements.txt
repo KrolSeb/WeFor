@@ -6,7 +6,7 @@ django-heroku==0.3.1
 googletrans==2.4.0
 gunicorn==20.0.4
 idna==2.8
-pip==19.3.1
+pip==21.1
 pipenv==2018.11.26
 psycopg2==2.8.4
 pytz==2019.3
