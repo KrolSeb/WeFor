@@ -12,7 +12,7 @@ psycopg2==2.8.4
 pytz==2019.3
 requests==2.22.0
 setuptools==42.0.2
-sqlparse==0.3.0
+sqlparse==0.5.4
 urllib3==1.25.7
 virtualenv==16.7.8
 virtualenv-clone==0.5.3
